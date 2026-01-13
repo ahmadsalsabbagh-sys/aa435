@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOR Tech </title>
+    <meta name="description" content="جور تك - تصميم مواقع، هويات بصرية، وحلول رقمية.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- مكتبة عرض النماذج ثلاثية الأبعاد -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="cursor-glow"></div>
+    <canvas id="tech-universe"></canvas>
+    <div class="bg-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="logo-container">
+            <div class="nav-logo-frame">
+                <img src="https://a.top4top.io/p_3655mnvzb1.png" alt="Logo" class="nav-logo-img">
+            </div>
+            <div class="logo-text">JOR <span>Tech</span></div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#portfolio">أعمالنا</a></li>
+            <li><a href="#pricing">الأسعار</a></li>
+            <li><a href="#contact" class="highlight-link">تواصل معنا</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-layout">
+            <div class="hero-info">
+                <h1 class="typing-text" data-text="جور تك .. حلول رقمية احترافية لمشروعك"></h1>
+                <p class="hero-sub fade-in">نحول الأفكار إلى واقع رقمي مبهر. تصميم مواقع، هويات بصرية، سيرة ذاتية (CV)، وتصاميم رقمية تضعك في المقدمة.</p>
+                <div class="buttons-wrapper fade-in delay-200">
+                    <a href="#pricing" class="btn btn-primary">اطلب الآن</a>
+                    <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in delay-200">
+                <div class="orbit-container">
+                    <!-- الحلقة ثابتة تماماً الان -->
+                    <div class="static-ring"></div>
+                    <!-- اللوجو هو الذي يخرج منه الضوء -->
+                    <img src="https://a.top4top.io/p_3655mnvzb1.png" alt="JOR Tech Logo" class="main-logo">
+                </div>
+                <div class="logo-label">صمم بواسطة JOR Tech</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-heading">خدماتنا <span class="highlight">الرقمية</span></h2>
+            <div class="grid-cards">
+                <div class="glass-card">
+                    <div class="card-icon">💻</div>
+                    <h3>تصميم مواقع إلكترونية</h3>
+                    <p>صفحات هبوط ومواقع تعريفية عصرية.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>شعارات وهوية بصرية</h3>
+                    <p>تصميم لوجو وبطاقات عمل تميز مشروعك.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">📊</div>
+                    <h3>عروض بوربوينت</h3>
+                    <p>تصميم شرائح عروض تقديمية احترافية.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">📱</div>
+                    <h3>تصاميم رقمية</h3>
+                    <p>بانرات ومنشورات سوشيال ميديا جذابة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section glass-section">
+        <div class="container text-center">
+            <h2 class="section-heading">من <span class="highlight">نحن</span></h2>
+            <div class="about-content">
+                <p class="lead">
+                     <strong>جور تك</strong>  هو مشروع تقني متخصص في تقديم حلول رقمية عصرية تساعدك على التميز بسرعة وسهولة، بأسلوب احترافي يعكس قوة الحضور الرقمي بأقل التكاليف.
+                </p>
+
+                <!-- ============================ -->
+                <!-- إضافة المجسم ثلاثي الأبعاد هنا -->
+                <!-- ============================ -->
+                <div class="threed-model-wrapper fade-in">
+                    <model-viewer 
+                        src="logol.glb" 
+                        alt="3D Logo JOR Tech" 
+                        auto-rotate 
+                        camera-controls 
+                        disable-zoom
+                        shadow-intensity="1" 
+                        camera-orbit="45deg 55deg 2.5m">
+                    </model-viewer>
+                </div>
+                <!-- نهاية قسم المجسم -->
+
+                <div class="features-grid fade-in">
+                    <div class="feature-box">
+                        <div class="f-icon">📄</div>
+                        <h4>تصميم CV مميز</h4>
+                        <p>نصمم لك سيرة ذاتية احترافية بطريقة حديثة تضمن لفت انتباه مسؤولي التوظيف.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="f-icon">🚀</div>
+                        <h4>عرض خدماتك تقنياً</h4>
+                        <p>نحول خدماتك التقليدية إلى عرض رقمي بصري جذاب يقنع عملائك فوراً.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="f-icon">✨</div>
+                        <h4>مبادرات متميزة</h4>
+                        <p>نعطي مبادرتك أو مشروعك الناشئ هوية بصرية قوية تضاهي المؤسسات الكبرى.</p>
+                    </div>
+                </div>
+                <div class="best-choice-badge fade-in">
+                    <span class="badge-icon"></span>
+                    <h3>JOR Tech خيارك الأفضل والأقل سعراً</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-heading">عينات <span class="highlight">أعمالنا</span></h2>
+            
+            <div class="portfolio-hint fade-in">
+                <p>💡 <strong>تنبيه هام:</strong> لرؤية التصميم كاملاً وتجربة الأداء، <span class="click-instruction">اضغط على الصورة</span> لفتح الموقع مباشرة.</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <a href="https://ahmadsalsabbagh-sys.github.io/aa12/" target="_blank" class="portfolio-item">
+                    <div class="portfolio-img"><img src="https://g.top4top.io/p_3655b3nnr1.png" alt="Project 1"></div>
+                    <div class="portfolio-desc"><h4>موقع تعريفي</h4><p>تصميم تقني حديث</p></div>
+                </a>
+                <a href="https://ahmadsalsabbagh-sys.github.io/AAA/" target="_blank" class="portfolio-item">
+                    <div class="portfolio-img"><img src="https://e.top4top.io/p_36592zi381.png" alt="Project 2"></div>
+                    <div class="portfolio-desc"><h4>واجهة ثلجية</h4><p>خلفية بلورات متحركة</p></div>
+                </a>
+                <a href="https://ahmadsalsabbagh-sys.github.io/q/" target="_blank" class="portfolio-item">
+                    <div class="portfolio-img"><img src="https://i.top4top.io/p_3655vl4uo1.png" alt="Project 3"></div>
+                    <div class="portfolio-desc"><h4>تصميم إبداعي</h4><p>بسيط وسريع</p></div>
+                </a>
+                <a href="https://ahmadalsabbagh.xo.je/" target="_blank" class="portfolio-item">
+                    <div class="portfolio-img"><img src="https://b.top4top.io/p_365540xtk1.png" alt="Project 4"></div>
+                    <div class="portfolio-desc"><h4>موقع شخصي</h4><p>احترافي ومميز</p></div>
+                </a>
+                <a href="https://nafasshababi.xo.je/" target="_blank" class="portfolio-item">
+                    <div class="portfolio-img"><img src="https://g.top4top.io/p_3655x6nqq1.png" alt="Project 5"></div>
+                    <div class="portfolio-desc"><h4>نفس شبابي</h4><p>موقع مبادرة شبابية</p></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta-bar">
+        <div class="container cta-content">
+            <div class="cta-text">
+                <h3>جاهز لنقل مشروعك للمستوى التالي؟</h3>
+                <p>استغل الفرصة الآن وتميز بتصميم احترافي لا ينسى.</p>
+            </div>
+            <a href="#contact" class="btn btn-primary pulse-btn">
+                <span>⚡</span> اطلب الآن
+            </a>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2 class="section-heading">باقات <span class="highlight">الخدمات</span></h2>
+            <div class="pricing-card glass-card">
+                <div class="glow-border"></div>
+                <h3>الباقة الشاملة</h3>
+                <span class="subtitle">أي خدمة من اختيارك</span>
+                <div class="price-tag">10 <small>دنانير</small></div>
+                <ul class="features-list">
+                    <li>✅ تصميم موقع (احترافي / متقدم)</li>
+                    <li>✅ أو شعار + هوية بصرية</li>
+                    <li>✅ ربط أيقونات التواصل الاجتماعي</li>
+                    <li>✅ تصميم متجاوب (موبايل + كمبيوتر)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container narrow-container text-center">
+            <h2 class="section-heading">ماذا يقول <span class="highlight">عملاؤنا</span></h2>
+            <div class="glass-card testimonial-card">
+                <div class="quote-icon">❝</div>
+                <p class="testimonial-text">"جور تك قدم لنا تصميم موقع احترافي بسرعة وجودة ممتازة! التعامل كان راقياً والنتيجة فاقت التوقعات."</p>
+                <div class="client-name">- عميل سعيد</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="container narrow-container">
+            <h2 class="section-heading">الأسئلة <span class="highlight">الشائعة</span></h2>
+            <div class="accordion">
+                <div class="acc-item">
+                    <div class="acc-header">هل يمكن تعديل الموقع بعد التسليم؟</div>
+                    <div class="acc-body">لا، الموقع شخصي ويتم تسليمه كنسخة نهائية جاهزة.</div>
+                </div>
+                <div class="acc-item">
+                    <div class="acc-header">كم مدة التسليم لكل خدمة؟</div>
+                    <div class="acc-body">يتم التسليم في وقت قياسي، أقل من 24 ساعة.</div>
+                </div>
+                <div class="acc-item">
+                    <div class="acc-header">ما هي طرق الدفع المتاحة؟</div>
+                    <div class="acc-body">الدفع متاح وميسر عبر واتس اب (زين كاش أو تحويل).</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-heading">تواصل <span class="highlight">معنا</span></h2>
+            <div class="contact-grid-new">
+                <a href="https://wa.me/962791036401?text=مرحبا%20جور%20تك%20اريد%20طلب%20خدمة" target="_blank" class="contact-card whatsapp-card">
+                    <div class="card-glow-bg"></div>
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p class="contact-number">0791036401</p>
+                    <span class="action-text">تحدث معنا الآن</span>
+                </a>
+
+                <a href="https://instagram.com/jortech.jo" target="_blank" class="contact-card instagram-card">
+                    <div class="card-glow-bg"></div>
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p class="contact-number">jortech.jo</p>
+                    <span class="action-text">اضغط للمتابعة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="https://a.top4top.io/p_3655mnvzb1.png" alt="Logo">
+            <p>© JOR Tech 2026 – جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
